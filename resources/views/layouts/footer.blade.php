@@ -36,9 +36,9 @@
                                                                         >
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="hb-image-retina">
-                                                                                    <a href="wp-content/uploads/2020/04/logo-white.png" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="5f00b8371b6ec">
+                                                                                    <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="5f00b8371b6ec">
                                                                                         <img
-                                                                                            src="wp-content/uploads/2020/04/logo-white.png"
+                                                                                            src="wp-content/themes/qrion/assets/images/logo.png"
                                                                                             alt=""
                                                                                         />
                                                                                     </a>
@@ -156,10 +156,10 @@
                                                                         >
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="elementor-text-editor elementor-clearfix">
-                                                                                    <p>Global Headquarters Empire State Building 350 5th Ave, Suite 6520 New York, NY 10118</p>
+                                                                                    <p>On Kheri Markanda Road, Near BS Heart Care Hospital, In Front of New Bus Stand, Kurukshetra, Haryana - India 136118</p>
                                                                                     <p>
-                                                                                        +055-576-2857<br />
-                                                                                        info@orionsupport.com
+                                                                                        +91-989-678-8095<br />
+                                                                                        info@cypherdash.com
                                                                                     </p>
                                                                                 </div>
                                                                             </div>
@@ -221,7 +221,7 @@
                                                                             data-widget_type="text-editor.default"
                                                                         >
                                                                             <div class="elementor-widget-container">
-                                                                                <div class="elementor-text-editor elementor-clearfix"><p>© 2020 Orion. All rights reserved.</p></div>
+                                                                                <div class="elementor-text-editor elementor-clearfix"><p>© {{ date('Y') }} CypherDash. All rights reserved.</p></div>
                                                                             </div>
                                                                         </div>
                                                                     </div>

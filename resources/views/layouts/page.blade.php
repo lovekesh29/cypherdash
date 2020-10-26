@@ -17,9 +17,9 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300i%2C400%2C400i%2C600%2C700%2C700i%7CRaleway%3A400%2C400i%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;display=swap"
     />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
-
+    <link rel="stylesheet" href="{{ url('css/app.css') }}" type="text/css" media="all" />
     <link media="all" href="wp-content/cache/autoptimize/css/autoptimize_8edca94bcd8fff1d900bffdb2ec3b691.css" rel="stylesheet" />
-    <title>Qrion &#8211; SEO &#038; Digital Marketing WordPress Theme</title>
+    <title>CypherDash &#8211; Web Development &#038; Digital Marketing Agency</title>
     <link rel="dns-prefetch" href="http://maps.googleapis.com/" />
     <link href="https://cdn.shortpixel.ai/" rel="preconnect" />
     <link href="https://fonts.gstatic.com/" crossorigin="anonymous" rel="preconnect" />
@@ -46,6 +46,7 @@
     <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embedb1fe?url=https%3A%2F%2Fqrion.hbtheme.com%2F&amp;format=xml" />
     <link rel="shortcut icon" href="wp-content/uploads/2020/05/Favicon.png" />
     <link rel="stylesheet" href="{{ url('js/intl-tel-input/build/css/intlTelInput.min.css') }}" type="text/css" media="all" />
+    
     <script src="{{ url('/js/app.js') }}"></script>
     <script src="{{ url('js/intl-tel-input/build/js/intlTelInput-jquery.min.js') }}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

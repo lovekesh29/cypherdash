@@ -3,6 +3,17 @@
 @include('layouts.header')
 
 @section('top-section')
+@if(session('success') == 'true')
+<script>
+      $(document).ready(function(){
+        swal({
+            icon: 'success',
+            title: 'Thanks For Contacting Us',
+            text: 'We will reach back to you shortly'
+        })
+      })
+	</script>
+@endif
 <section
     class="elementor-element elementor-element-0b159d0 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
     data-id="0b159d0"
@@ -25,7 +36,7 @@
                                         <div class="hb-heading">
                                             <h4 class="hb-heading__subtitle">WE ARE BEST SEO COMPANY</h4>
                                             <h2 class="hb-heading__title">Get free website SEO score online</h2>
-                                            <p class="hb-heading__desc">Ask Orion to create a comprehensive and aggressive digital marketing plan taking your business to new heights.</p>
+                                            <p class="hb-heading__desc">Ask CypherDash to create a comprehensive and aggressive digital marketing plan taking your business to new heights.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -41,18 +52,23 @@
                                 <div class="hbtheme-animes hbtheme-animes-fadeInLeft" data-hbtheme-anime="fadeInLeft">
                                     <div class="hbtheme-anime anime-loading">
                                         <div class="hb-form-analyze">
-                                            <form action="https://qrion.hbtheme.com/" method="GET" target="_self">
+                                            <form action="{{ url('/webiste-analyze') }}" method="post">
+                                            @csrf
                                                 <div class="hb-form-analyze__content">
                                                     <div class="hb-form-analyze__input">
-                                                        <input type="text" name="site" placeholder="Enter Your Website Address" autocomplete="off" />
+                                                        <input type="email" name="businessEmail" placeholder="Enter Your Business Email" autocomplete="off" class="@error('businessEmail') is-invalid @enderror" />
                                                     </div>
-
                                                     <div class="hb-form-analyze__submit">
                                                         <button type="submit">
                                                             Analyze
                                                         </button>
                                                     </div>
                                                 </div>
+                                                @error('businessEmail')
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $message }}</strong>
+                                                    </span>
+                                                @enderror
                                             </form>
                                         </div>
                                     </div>
@@ -412,9 +428,9 @@
                             <div class="elementor-widget-container">
                                 <div class="hb-heading">
                                     <h4 class="hb-heading__subtitle">WHY CHOOSE US</h4>
-                                    <h2 class="hb-heading__title">The Benefits You’ll Get With Orion</h2>
+                                    <h2 class="hb-heading__title">The Benefits You’ll Get With CypherDash</h2>
                                     <p class="hb-heading__desc">
-                                        Our team here at Orion will work to build a long-term partnership with you. Our knowledgeable account managers will work with you to understand your business’s
+                                        Our team here at CypherDash will work to build a long-term partnership with you. Our knowledgeable account managers will work with you to understand your business’s
                                         needs, then custom tailor the best strategy for you to maximize the return on your investment.
                                     </p>
                                 </div>
@@ -1623,15 +1639,14 @@
                                 <div class="hb-contact-form7 hb-contact-wpcf7-2">
                                     <div role="form" class="wpcf7" id="wpcf7-f6-p15-o1" lang="en-US" dir="ltr">
                                         <div class="screen-reader-response"></div>
-                                        <form action="" method="post" class="wpcf7-form" novalidate="novalidate" id="contactForm">
+                                        <form action="{{ url('/contact-us') }}" method="post" class="wpcf7-form" novalidate="novalidate" id="contactForm">
                                             @csrf
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <span class="wpcf7-form-control-wrap your-name">
                                                         <input
                                                             type="text"
-                                                            name="your-name"
-                                                            value=""
+                                                            name="name"
                                                             size="40"
                                                             class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                             aria-required="true"
@@ -1639,12 +1654,18 @@
                                                             placeholder="Name *"
                                                         />
                                                     </span>
+                                                    @error('name')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
                                                 </div>
+                                                
                                                 <div class="col-sm-6">
                                                     <span class="wpcf7-form-control-wrap your-email">
                                                         <input
                                                             type="email"
-                                                            name="your-email"
+                                                            name="email"
                                                             value=""
                                                             size="40"
                                                             class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
@@ -1653,12 +1674,18 @@
                                                             placeholder="Email *"
                                                         />
                                                     </span>
+                                                    @error('email')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
                                                 </div>
+                                               
                                                 <div class="col-sm-6">
                                                     <span class="wpcf7-form-control-wrap your-phone">
                                                         <input
                                                             type="text"
-                                                            name="your-phone"
+                                                            name="phone"
                                                             value=""
                                                             id="phone"
                                                             size="40"
@@ -1668,16 +1695,32 @@
                                                             placeholder="Phone number *"
                                                         />
                                                     </span>
+                                                    <span class="invalid-feedback" id="phoneErrorLabel" role="alert" style="display: none;">
+                                                        <strong>Invalid Phone Number</strong>
+                                                    </span>
+                                                    @error('phone')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
                                                 </div>
+                                                
+                                                
                                                 <div class="col-sm-6">
                                                     <span class="wpcf7-form-control-wrap your-site">
-                                                        <input type="text" name="your-site" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Website" />
+                                                        <input type="url" name="website" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Website" />
                                                     </span>
+                                                    @error('website')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
                                                 </div>
+                                                
                                                 <div class="col-sm-12">
                                                     <span class="wpcf7-form-control-wrap your-message">
                                                         <textarea
-                                                            name="your-message"
+                                                            name="yourMessage"
                                                             cols="4"
                                                             rows="5"
                                                             class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
@@ -1686,7 +1729,13 @@
                                                             placeholder="Message…"
                                                         ></textarea>
                                                     </span>
+                                                    @error('message')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
                                                 </div>
+                                                
                                                 <div class="col-sm-12"><input type="submit" value="SUMMIT" class="wpcf7-form-control wpcf7-submit" /></div>
                                             </div>
                                             <div class="wpcf7-response-output wpcf7-display-none"></div>

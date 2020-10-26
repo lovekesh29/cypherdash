@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::post('/webiste-analyze', 'HomeController@website_analyze');
+Route::post('/contact-us', 'HomeController@contact_us');
