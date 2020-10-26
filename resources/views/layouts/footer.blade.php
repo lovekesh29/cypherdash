@@ -178,19 +178,19 @@
                                                                         >
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="elementor-social-icons-wrapper">
-                                                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-2e90814" href="#" target="_blank">
+                                                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-2e90814" href="https://www.facebook.com/cypherdash/" target="_blank">
                                                                                         <span class="elementor-screen-only">Facebook</span>
                                                                                         <i class="fab fa-facebook"></i>
                                                                                     </a>
-                                                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-3078d71" href="#" target="_blank">
-                                                                                        <span class="elementor-screen-only">Twitter</span>
-                                                                                        <i class="fab fa-twitter"></i>
+                                                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-3078d71" href="https://www.instagram.com/cypher.dash/" target="_blank">
+                                                                                        <span class="elementor-screen-only">Instagram</span>
+                                                                                        <i class="fab fa-instagram"></i>
                                                                                     </a>
                                                                                     <a class="elementor-icon elementor-social-icon elementor-social-icon-google-plus-g elementor-repeater-item-9dbc030" href="#" target="_blank">
                                                                                         <span class="elementor-screen-only">Google-plus-g</span>
                                                                                         <i class="fab fa-google-plus-g"></i>
                                                                                     </a>
-                                                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-e1afb97" href="#" target="_blank">
+                                                                                    <a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-e1afb97" href="https://www.linkedin.com/company/cypherdash" target="_blank">
                                                                                         <span class="elementor-screen-only">Linkedin</span>
                                                                                         <i class="fab fa-linkedin"></i>
                                                                                     </a>
