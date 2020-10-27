@@ -1,4 +1,8 @@
-@extends('layouts.page')
+@extends('layouts.page', ['cssId' => '15'])
+
+@section('css')
+<link rel="stylesheet" id="elementor-post-15-css" href="wp-content/cache/autoptimize/css/autoptimize_single_2ff3ae06c980b27de56ada70239785630e9e.css?ver=1589615155" type="text/css" media="all" />
+@endsection
 
 @include('layouts.header')
 

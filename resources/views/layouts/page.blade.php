@@ -26,7 +26,7 @@
     <link rel="alternate" type="application/rss+xml" title="Qrion - SEO &amp; Digital Marketing WordPress Theme &raquo; Feed" href="feed/index.html" />
     <link rel="alternate" type="application/rss+xml" title="Qrion - SEO &amp; Digital Marketing WordPress Theme &raquo; Comments Feed" href="comments/feed/index.html" />
 
-    <link rel="stylesheet" id="elementor-post-15-css" href="wp-content/cache/autoptimize/css/autoptimize_single_2ff3ae06c980b27de56ada70239785630e9e.css?ver=1589615155" type="text/css" media="all" />
+    @yield('css')
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     
@@ -71,8 +71,9 @@
             <!-- Main -->
             <div id="hb-main">
                 <div class="hb-page-builder">
+                @yield('page_heading')
                     <div class="hb-page-builder-content">
-                        <div data-elementor-type="wp-page" data-elementor-id="15" class="elementor elementor-15" data-elementor-settings="[]">
+                        <div data-elementor-type="wp-page" data-elementor-id="{{ $cssId }}" class="elementor elementor-{{ $cssId }}" data-elementor-settings="[]">
                             <div class="elementor-inner">
                                 <div class="elementor-section-wrap">
                                     @yield('top-section')

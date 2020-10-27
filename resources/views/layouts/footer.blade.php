@@ -38,7 +38,7 @@
                                                                                 <div class="hb-image-retina">
                                                                                     <a href="{{ url('/') }}" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="5f00b8371b6ec">
                                                                                         <img
-                                                                                            src="wp-content/themes/qrion/assets/images/logo.png"
+                                                                                            src="/wp-content/themes/qrion/assets/images/logo-white.png"
                                                                                             alt=""
                                                                                         />
                                                                                     </a>
