@@ -32,7 +32,7 @@
                                                             <tr>
                                                                 <td height="10px" style="font-size: 16px; line-height: 24px;letter-spacing:.3px; text-align: left;">
                                                                     <p style="color:#646060; margin-bottom: 20px;"><b>Hey, {{ $name }}</b></p>
-                                                                    <p style="color:#646060; margin-bottom: 20px;">Thanks for reaching out to us. We will review your info and get back to us.</p>
+                                                                    <p style="color:#646060; margin-bottom: 20px;">Thanks for reaching out to us. We will review your info and get back to you.</p>
                                                                     <p style="color:#646060; margin-bottom: 20px;">In the mean time you can checkout our services or reach back us.</p>
                                                                     <p style="color:#646060; margin-bottom: 20px;">We provide End to End soltions for your Business</p>
                                                                     <h4 style="color:#646060; margin-bottom: 20px;">Our Expertise</h4>

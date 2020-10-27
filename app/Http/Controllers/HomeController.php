@@ -23,14 +23,18 @@ class HomeController extends Controller
 
         //client email
         Mail::send('emails.client_business_analyze', $senderInfo , function($message) use  ($senderInfo){
-            $message->to($senderInfo['businessEmail'])->subject
-               ('Cypher Dash - End To End Solutions For Your Business');
+            $message->to($senderInfo['businessEmail'])
+            ->replyTo(config('mail.admin.address'),config('mail.admin.name'))
+            ->subject('Cypher Dash - End To End Solutions For Your Business');
             $message->from(config('mail.from.address'),config('mail.from.name'));
          });
-        Mail::send('emails.admin_business_analyze', $senderInfo, function($message){
-        $message->to(config('mail.admin.address'))->subject
-            ('Cypher Dash - Business Analysis Form');
-        $message->from(config('mail.from.address'),config('mail.from.name'));
+
+         //admin email
+        Mail::send('emails.admin_business_analyze', $senderInfo, function($message) use  ($senderInfo){
+            $message->to(config('mail.admin.address'), config('mail.admin.name'))
+            ->replyTo($senderInfo['businessEmail'])
+            ->subject('Cypher Dash - Business Analysis Form');
+            $message->from(config('mail.from.address'),config('mail.from.name'));
         });
 
         return back()->with('success', 'true');
@@ -58,16 +62,24 @@ class HomeController extends Controller
 
         //client email
         Mail::send('emails.client_contactus', $userInfo , function($message) use  ($userInfo){
-            $message->to($userInfo['email'], $userInfo['name'])->subject
-               ('Cypher Dash - End To End Solutions For Your Business');
+            $message->to($userInfo['email'], $userInfo['name'])
+            ->replyTo(config('mail.admin.address'),config('mail.admin.name'))
+            ->subject('Cypher Dash - End To End Solutions For Your Business');
             $message->from(config('mail.from.address'),config('mail.from.name'));
          });
-        Mail::send('emails.admin_contactus', $userInfo, function($message){
-        $message->to(config('mail.admin.address'))->subject
-            ('Cypher Dash - Contact Us Form');
-        $message->from(config('mail.from.address'),config('mail.from.name'));
+
+         //admin email
+        Mail::send('emails.admin_contactus', $userInfo, function($message) use  ($userInfo){
+            $message->to(config('mail.admin.address'), config('mail.admin.name'))
+            ->replyTo($userInfo['email'], $userInfo['name'])
+            ->subject('Cypher Dash - Contact Us Form');
+            $message->from(config('mail.from.address'),config('mail.from.name'));
         });
 
         return back()->with('success', 'true');
+    }
+    public function contactus_view()
+    {
+        return view('contact_us');
     }
 }
