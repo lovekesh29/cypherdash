@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Validator;
 use  App\BusinessEmail;
 use  App\ContactUs;
 use Mail;
-
+use Illuminate\Support\Facades\View;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -81,5 +81,18 @@ class HomeController extends Controller
     public function contactus_view()
     {
         return view('contact_us');
+    }
+    public function get_pages(Request $request)
+    {
+        $url = $request->url();
+        if ($request->is('india/*')) {
+            $page = $request->segment(2);
+            if (View::exists('pages.india.'.$page)) {
+                return view('pages.india.'.$page, ['url' => $url]);
+            }
+            else{
+                abort(404);
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    @yield('meta')
     <script>
     var site_url = "{{ url('/') }}";
     </script>
@@ -18,13 +19,11 @@
     />
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="stylesheet" href="{{ url('css/app.css') }}" type="text/css" media="all" />
-    <link media="all" href="wp-content/cache/autoptimize/css/autoptimize_8edca94bcd8fff1d900bffdb2ec3b691.css" rel="stylesheet" />
+    <link media="all" href="{{ url('wp-content/cache/autoptimize/css/autoptimize_8edca94bcd8fff1d900bffdb2ec3b691.css') }}" rel="stylesheet" />
     <title>CypherDash &#8211; Web Development &#038; Digital Marketing Agency</title>
     <link rel="dns-prefetch" href="http://maps.googleapis.com/" />
     <link href="https://cdn.shortpixel.ai/" rel="preconnect" />
     <link href="https://fonts.gstatic.com/" crossorigin="anonymous" rel="preconnect" />
-    <link rel="alternate" type="application/rss+xml" title="Qrion - SEO &amp; Digital Marketing WordPress Theme &raquo; Feed" href="feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="Qrion - SEO &amp; Digital Marketing WordPress Theme &raquo; Comments Feed" href="comments/feed/index.html" />
 
     @yield('css')
 
@@ -39,14 +38,9 @@
     <link rel="https://api.w.org/" href="wp-json/index.html" />
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html?rsd" />
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 5.4.2" />
-    <link rel="canonical" href="index.html" />
-    <link rel="shortlink" href="index.html" />
-    <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed4e1f.json?url=https%3A%2F%2Fqrion.hbtheme.com%2F" />
-    <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embedb1fe?url=https%3A%2F%2Fqrion.hbtheme.com%2F&amp;format=xml" />
+    <link rel="canonical" href="{{ $url ?? 'index.php' }}" />
     <link rel="shortcut icon" href="wp-content/uploads/2020/05/Favicon.png" />
     <link rel="stylesheet" href="{{ url('js/intl-tel-input/build/css/intlTelInput.min.css') }}" type="text/css" media="all" />
-    
     <script src="{{ url('/js/app.js') }}"></script>
     <script src="{{ url('js/intl-tel-input/build/js/intlTelInput-jquery.min.js') }}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -78,7 +72,9 @@
                                 <div class="elementor-section-wrap">
                                     @yield('top-section')
                                     @yield('slider')
-                                    
+                                    @yield('planing')
+                                    @yield('what_we_do')
+                                    @yield('faq')
                                     @yield('benifits')
                                     @yield('dm-tips')
                                     @yield('what-we-do')
@@ -125,23 +121,23 @@
         <a id="hb-scrolltop" class="hb-scrolltop" href="#top"><i class="arrow_carrot-up"></i></a>
         <!-- End / Scroll Top -->
 
-        <link rel="stylesheet" id="elementor-post-217-css" href="wp-content/cache/autoptimize/css/autoptimize_single_c9e47a02673b41b72eceacc62525a33fd407.css?ver=1588823740" type="text/css" media="all" />
+        <link rel="stylesheet" id="elementor-post-217-css" href="{{ url('wp-content/cache/autoptimize/css/autoptimize_single_c9e47a02673b41b72eceacc62525a33fd407.css?ver=1588823740') }}" type="text/css" media="all" />
 
         
 
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key&amp;ver=3"></script>
 
-        <script type="text/javascript" src="wp-includes/js/dist/vendor/wp-polyfill.min89b1.js?ver=7.4.4"></script>
+        <script type="text/javascript" src="{{ url('wp-includes/js/dist/vendor/wp-polyfill.min89b1.js?ver=7.4.4') }}"></script>
         <script type="text/javascript">
-            "fetch" in window || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-fetch.min6e0e.js?ver=3.0.0"></scr' + "ipt>");
+            "fetch" in window || document.write("<script src='{{ url('wp-includes/js/dist/vendor/wp-polyfill-fetch.min6e0e.js?ver=3.0.0') }}'></scr" + "ipt>");
             document.contains || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-node-contains.min2e00.js?ver=3.42.0"></scr' + "ipt>");
             window.DOMRect || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min2e00.js?ver=3.42.0"></scr' + "ipt>");
             (window.URL && window.URL.prototype && window.URLSearchParams) || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-url.min5aed.js?ver=3.6.4"></scr' + "ipt>");
             (window.FormData && window.FormData.prototype.keys) || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-formdata.mine9bd.js?ver=3.0.12"></scr' + "ipt>");
             (Element.prototype.matches && Element.prototype.closest) || document.write('<script src="wp-includes/js/dist/vendor/wp-polyfill-element-closest.min4c56.js?ver=2.0.2"></scr' + "ipt>");
         </script>
-        <script type="text/javascript" src="wp-includes/js/dist/dom-ready.min8293.js?ver=91fc8f05178d5c6365aec778f840ae17"></script>
-        <script type="text/javascript" src="wp-includes/js/dist/a11y.min2902.js?ver=45f739d280d1244f6cb498ed8f1bf042"></script>
+        <script type="text/javascript" src="{{ url('wp-includes/js/dist/dom-ready.min8293.js?ver=91fc8f05178d5c6365aec778f840ae17') }}"></script>
+        <script type="text/javascript" src="{{ url('wp-includes/js/dist/a11y.min2902.js?ver=45f739d280d1244f6cb498ed8f1bf042') }}"></script>
         <script type="text/javascript">
             /* <![CDATA[ */
             var uiAutocompleteL10n = {
@@ -184,7 +180,7 @@
             };
         </script>
 
-        <script defer src="wp-content/cache/autoptimize/js/autoptimize_45d529a8ace418ebb444f9162b57fdc5.js"></script>
+        <script defer src="{{ url('wp-content/cache/autoptimize/js/autoptimize_45d529a8ace418ebb444f9162b57fdc5.js') }}"></script>
         <script data-cfasync="false">
             !(function (t) {
                 "use strict";

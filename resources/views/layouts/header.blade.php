@@ -7,9 +7,9 @@
                             <!-- Logo -->
 
                             <div class="hb-header__logo display-flex hb-align-items-center">
-                                <a href="{{ url('contact-us') }}">
+                                <a href="/">
                                     <img
-                                        src="wp-content/themes/qrion/assets/images/logo.png"
+                                        src="{{ url('wp-content/themes/qrion/assets/images/logo.png') }}"
                                         alt="CypherDash - Web Development &amp; Digital Marketing Agency"
                                     />
                                 </a>
@@ -20,24 +20,25 @@
 
                         <div class="hb-header__center display-flex">
                             <!-- Menu -->
-                            <nav class="hb-header__nav">
+                            <div id="main-nav" class="hb-header__nav stellarnav">
                                 <ul id="menu-main" class="hb-menu-list">
-                                    <li
-                                        id="menu-item-9"
-                                    >
-                                        <a href="{{ url('contact-us') }}" aria-current="page">Home</a>
+                                    <li id="menu-item-9">
+                                        <a href="/" aria-current="page">Home</a>
                                     </li>
                                     <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
-                                        <a href="#">Services</a>
+                                        <a href="#">Countries</a>
                                         <ul class="sub-menu">
-                                            <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="{{ url('contact-us') }}">Organic Growth Strategy</a></li>
-                                            <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('contact-us') }}">Content Marketing</a></li>
-                                            <li id="menu-item-625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-625"><a href="{{ url('contact-us') }}">Social Media Management</a></li>
-                                            <li id="menu-item-759" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-759"><a href="{{ url('contact-us') }}">Conversion Optimization</a></li>
+                                            <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
+                                            <a href="#">India</a>
+                                                <ul class="sub-menu">
+                                                    <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="{{ url('india/seo-services') }}">Seo Services</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('contact-us') }}">Content Marketing</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
-                            </nav>
+                            </div>
                             <!-- End / Menu -->
                         </div>
 
@@ -64,13 +65,16 @@
                                     <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children menu-item-9">
                                         <a href="{{ url('/') }}" aria-current="page">Home</a>
                                     </li>
-                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
-                                        <a href="#">Services</a>
+                                    <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
+                                        <a href="#">Countries</a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="{{ url('contact-us') }}">Organic Growth Strategy</a></li>
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('contact-us') }}">Content Marketing</a></li>
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-625"><a href="{{ url('contact-us') }}">Social Media Management</a></li>
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-759"><a href="{{ url('contact-us') }}">Conversion Optimization</a></li>
+                                            <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
+                                            <a href="#">India</a>
+                                                <ul class="sub-menu">
+                                                    <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="{{ url('contact-us') }}">Organic Growth Strategy</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('contact-us') }}">Content Marketing</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>

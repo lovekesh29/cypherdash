@@ -250,10 +250,10 @@
                                                                         >
                                                                             <div class="elementor-widget-container">
                                                                                 <div class="hb-wave" style="height: 30rem;">
-                                                                                    <div class="hb-wave__item wave1" style="background-image: url(wp-content/uploads/2020/04/bg_foot_1.png); background-size: 100rem calc(30rem + 0rem);"></div>
+                                                                                    <div class="hb-wave__item wave1" style="background-image: url({{ url('wp-content/uploads/2020/04/bg_foot_1.png') }}); background-size: 100rem calc(30rem + 0rem);"></div>
                                                                                     <div
                                                                                         class="hb-wave__item wave2"
-                                                                                        style="background-image: url(wp-content/uploads/2020/04/bg_foot_1.png); background-size: 100rem calc(30rem + 2.5rem);"
+                                                                                        style="background-image: url({{ url('wp-content/uploads/2020/04/bg_foot_1.png') }}); background-size: 100rem calc(30rem + 2.5rem);"
                                                                                     ></div>
                                                                                 </div>
                                                                             </div>

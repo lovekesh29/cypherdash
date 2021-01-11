@@ -1,7 +1,7 @@
 @extends('layouts.page', ['cssId' => '790'])
 
 @section('css')
-<link rel="stylesheet" id='elementor-post-790-css' href="wp-content/cache/autoptimize/css/autoptimize_single_415fcc329d2c2ddef601a3bc446feb0e98a6.css?ver=1598135807" type="text/css" media="all" />
+<link rel="stylesheet" id='elementor-post-790-css' href="{{ url('wp-content/cache/autoptimize/css/autoptimize_single_415fcc329d2c2ddef601a3bc446feb0e98a6.css?ver=1598135807') }}" type="text/css" media="all" />
 @endsection
 
 @include('layouts.header')
