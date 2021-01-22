@@ -38,6 +38,16 @@
                                                     <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/website-development-services') }}">Website Development Services</a></li>
                                                 </ul>
                                             </li>
+                                            <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
+                                            <a href="#">United States</a>
+                                                <ul class="sub-menu">
+                                                    <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="{{ url('us/seo-services') }}">Seo Services</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('us/social-media-marketing') }}">Social Media Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('us/pay-per-click-marketing') }}">Pay Per Click Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('us/content-marketing') }}">Content Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('us/website-development-services') }}">Website Development Services</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -74,11 +84,21 @@
                                             <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
                                             <a href="#">India</a>
                                                 <ul class="sub-menu">
-                                                    <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="{{ url('contact-us') }}">Organic Growth Strategy</a></li>
+                                                    <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="{{ url('india/seo-services') }}">Seo Services</a></li>
                                                     <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/social-media-marketing') }}">Social Media Marketing</a></li>
                                                     <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/pay-per-click-marketing') }}">Pay Per Click Marketing</a></li>
                                                     <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/content-marketing') }}">Content Marketing</a></li>
                                                     <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/website-development-services') }}">Website Development Services</a></li>
+                                                </ul>
+                                            </li>
+                                            <li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12">
+                                            <a href="#">United States</a>
+                                                <ul class="sub-menu">
+                                                    <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="{{ url('us/seo-services') }}">Seo Services</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('us/social-media-marketing') }}">Social Media Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('us/pay-per-click-marketing') }}">Pay Per Click Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('us/content-marketing') }}">Content Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('us/website-development-services') }}">Website Development Services</a></li>
                                                 </ul>
                                             </li>
                                         </ul>

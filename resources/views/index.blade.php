@@ -1484,7 +1484,7 @@
 
                                                     <div class="hb-icon-box__entry">
 
-                                                        <h2 class="hb-icon-box__title">Serach Engine Optimization Services</h2>
+                                                        <h2 class="hb-icon-box__title">Search Engine Optimization Services</h2>
 
                                                         <p class="hb-icon-box__desc">Will bring your site on the top whenever someone searches for the services you provide. </p>
                                                         <span class="hb-icon-box__more text-uppercase">LEARN MORE <i class="arrow_right"></i></span>
