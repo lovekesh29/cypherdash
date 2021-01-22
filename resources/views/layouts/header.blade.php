@@ -32,7 +32,10 @@
                                             <a href="#">India</a>
                                                 <ul class="sub-menu">
                                                     <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="{{ url('india/seo-services') }}">Seo Services</a></li>
-                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('contact-us') }}">Content Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/social-media-marketing') }}">Social Media Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/pay-per-click-marketing') }}">Pay Per Click Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/content-marketing') }}">Content Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/website-development-services') }}">Website Development Services</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -72,7 +75,10 @@
                                             <a href="#">India</a>
                                                 <ul class="sub-menu">
                                                     <li id="menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-760"><a href="{{ url('contact-us') }}">Organic Growth Strategy</a></li>
-                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('contact-us') }}">Content Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/social-media-marketing') }}">Social Media Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/pay-per-click-marketing') }}">Pay Per Click Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/content-marketing') }}">Content Marketing</a></li>
+                                                    <li id="menu-item-758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-758"><a href="{{ url('india/website-development-services') }}">Website Development Services</a></li>
                                                 </ul>
                                             </li>
                                         </ul>

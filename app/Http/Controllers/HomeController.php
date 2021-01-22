@@ -93,6 +93,16 @@ class HomeController extends Controller
             else{
                 abort(404);
             }
+        } 
+        else if($request->is('us/*'))
+        {
+            $page = $request->segment(2);
+            if (View::exists('pages.us.'.$page)) {
+                return view('pages.us.'.$page, ['url' => $url]);
+            }
+            else{
+                abort(404);
+            }
         }
     }
 }

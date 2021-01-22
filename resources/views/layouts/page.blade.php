@@ -7,9 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     @yield('meta')
-    <script>
-    var site_url = "{{ url('/') }}";
-    </script>
+    
     <link
         rel="preload"
         as="style"
@@ -17,7 +15,6 @@
         id="ao_optimized_gfonts"
         href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C300i%2C400%2C400i%2C600%2C700%2C700i%7CRaleway%3A400%2C400i%2C500%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;display=swap"
     />
-    <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="stylesheet" href="{{ url('css/app.css') }}" type="text/css" media="all" />
     <link media="all" href="{{ url('wp-content/cache/autoptimize/css/autoptimize_8edca94bcd8fff1d900bffdb2ec3b691.css') }}" rel="stylesheet" />
     <title>CypherDash &#8211; Web Development &#038; Digital Marketing Agency</title>
@@ -39,8 +36,11 @@
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html?rsd" />
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
     <link rel="canonical" href="{{ $url ?? 'index.php' }}" />
-    <link rel="shortcut icon" href="wp-content/uploads/2020/05/Favicon.png" />
+    <link rel="shortcut icon" href="{{ url('wp-content/uploads/2020/05/Favicon.png') }}" />
     <link rel="stylesheet" href="{{ url('js/intl-tel-input/build/css/intlTelInput.min.css') }}" type="text/css" media="all" />
+    <script>
+    var site_url = "{{ url('/') }}";
+    </script>
     <script src="{{ url('/js/app.js') }}"></script>
     <script src="{{ url('js/intl-tel-input/build/js/intlTelInput-jquery.min.js') }}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

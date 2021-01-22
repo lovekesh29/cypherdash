@@ -21,5 +21,6 @@ Route::post('/webiste-analyze', 'HomeController@website_analyze');
 Route::post('/contact-us', 'HomeController@contact_us');
 Route::get('contact-us', 'HomeController@contactus_view');
 
-
-Route::get('/india/{servicePage}', 'HomeController@get_pages');  //keep this route always in last
+//keep this route always in last
+Route::get('/india/{servicePage}', 'HomeController@get_pages');  
+Route::get('/us/{servicePage}', 'HomeController@get_pages');
